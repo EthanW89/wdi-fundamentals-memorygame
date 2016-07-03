@@ -13,3 +13,14 @@ if cardTwo == cardFour {
 } else {
 	alert("Sorry, try again.");
 }
+
+var createBoard = function() {
+	var gameBoard = getElementById('game-board');
+				for (var i = 0; i < cards.length; i++)  {
+			var newDiv = document.createElement('div');
+			newDiv.className = 'card';
+			board.appendChild(newDiv);
+			cardElement.setAttribute('data-card', cards[i]);
+		}
+
+}
